@@ -9,8 +9,8 @@ import visitors.Visitor;
 public class PrintRapportCommandes implements Visitor
 {
     public PrintRapportCommandes(){}
-    public void visit(GroupeClient g){System.out.println("Je visite un groupe");}
+    public void visit(GroupeClient g){System.out.println(String.format("Je visite un groupe", g.GetName()));}
     public void visit(Client c){System.out.println("Je visite un client");}
     public void visit(Commande o){System.out.println("Je visite une commande");}
-    public void visit(Ligne l){System.out.println("Je visite une ligne");}
+    public void visit(Ligne l){System.out.println(String.format("Je visite une ligne", l.GetName()));}
 }
