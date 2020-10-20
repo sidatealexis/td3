@@ -1,4 +1,4 @@
-package main;
+package commandes;
 
 public class GroupeClient {
 }
